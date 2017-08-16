@@ -1,0 +1,134 @@
+{
+	"variables": [],
+	"info": {
+		"name": "FabricaAutomoviles",
+		"_postman_id": "86fdb9dc-80d2-e769-03af-7b9fae6e0bd8",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ListAll",
+			"request": {
+				"url": "localhost:8080/fabric/automoviles",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GetById",
+			"request": {
+				"url": "localhost:8080/fabric/automovil/4",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"url": "localhost:8080/fabric/automovil/3",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"url": "localhost:8080/fabric/automovil",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n    \t\"id\":\"4\",\n        \"nombre\": \"Sedan TC-AC-ABS-AB-LL5\",\n        \"opcionales\": [\n        {\n            \"id\": \"AB2\",\n            \"nombre\": \"Sistema Frenos ABS2\",\n            \"precio\": 14000\n        }],\n    \t\"automovilTipo\": {\n    \t\t\"id\":\"D\",\n\t        \"nombre\": \"Descapotable2\",\n\t        \"precio\": 230000\n\t    }\n    }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "New",
+			"request": {
+				"url": "localhost:8080/fabric/automovil/new",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"nombre\": \"Sedan TC-AC-ABS-AB-LL3\",\n        \"opcionales\": [{\n        \t\"id\": \"TC\",\n            \"nombre\": \"Techo Corredizo\",\n            \"precio\": 12000\n        },{\n        \t\"id\": \"AC\",\n            \"nombre\": \"Aire Acondicionado\",\n            \"precio\": 20000\n        },{\n        \t\"id\": \"ABS\",\n            \"nombre\": \"Sistema Frenos ABS\",\n            \"precio\": 14000\n        },{\n        \t\"id\": \"LL\",\n            \"nombre\": \"Llantas Aleacion\",\n            \"precio\": 12000\n        },{\n        \t\"id\": \"AB\",\n            \"nombre\": \"AirBag\",\n            \"precio\": 12000\n        }\n        ],\n        \"automovilTipo\": {\n        \t\"id\":\"S\",\n            \"nombre\": \"sedan\",\n            \"precio\": 230000\n        }\n    }"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "6eb6dcf6-af98-4782-bac1-723918cc996c",
+					"name": "response",
+					"originalRequest": {
+						"url": "localhost:8080/fabric/automovil/new",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n        \"nombre\": \"Sedan TC-AC-ABS-AB-LL2\",\n        \"opcionales\": [{\n        \t\"id\": \"TC\",\n            \"nombre\": \"Techo Corredizo\",\n            \"precio\": 12000\n        },{\n        \t\"id\": \"AC\",\n            \"nombre\": \"Aire Acondicionado\",\n            \"precio\": 20000\n        },{\n        \t\"id\": \"ABS\",\n            \"nombre\": \"Sistema Frenos ABS\",\n            \"precio\": 14000\n        },{\n        \t\"id\": \"LL\",\n            \"nombre\": \"Llantas Aleacion\",\n            \"precio\": 12000\n        }],\n        \"automovilTipo\": {\n            \"nombre\": \"sedan\",\n            \"precio\": 230000\n        }\n    }"
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "plainText",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "0",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Tue, 15 Aug 2017 05:11:40 GMT",
+							"description": "The date and time that the message was sent"
+						}
+					],
+					"cookie": [],
+					"responseTime": 502,
+					"body": ""
+				}
+			]
+		}
+	]
+}

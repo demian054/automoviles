@@ -1,0 +1,21 @@
+ /*
+ Method: Put - JSON(application/json)
+ URL: localhost:8080/fabric/automovil
+ */ 
+ 
+  #Request / #Response
+  {
+    	"id":"4",
+        "nombre": "Sedan TC-AC-ABS-AB-LL5",
+        "opcionales": [
+        {
+            "id": "AB2",
+            "nombre": "Sistema Frenos ABS2",
+            "precio": 14000
+        }],
+    	"automovilTipo": {
+    		"id":"D",
+	        "nombre": "Descapotable2",
+	        "precio": 230000
+	    }
+    }

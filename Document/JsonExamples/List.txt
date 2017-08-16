@@ -1,0 +1,119 @@
+ /*
+ Method: Get
+ URL: localhost:8080/fabric/automoviles
+ */ 
+ 
+ #Response
+ [
+    {
+        "id": 4,
+        "nombre": "Sedan TC-AC-ABS-AB-LL",
+        "precioTotal": 300000,
+        "opcionales": [
+            {
+                "id": "LL",
+                "nombre": "Llantas Aleacion",
+                "precio": 12000
+            },
+            {
+                "id": "ABS",
+                "nombre": "Sistema Frenos ABS",
+                "precio": 14000
+            },
+            {
+                "id": "AC",
+                "nombre": "Aire Acondicionado",
+                "precio": 20000
+            },
+            {
+                "id": "AB",
+                "nombre": "AirBag",
+                "precio": 12000
+            },
+            {
+                "id": "TC",
+                "nombre": "Techo Corredizo",
+                "precio": 12000
+            }
+        ],
+        "automovilTipo": {
+            "id": "S",
+            "nombre": "sedan",
+            "precio": 230000
+        }
+    },
+    {
+        "id": 5,
+        "nombre": "Sedan TC-AC-ABS-AB-LL2",
+        "precioTotal": 300000,
+        "opcionales": [
+            {
+                "id": "LL",
+                "nombre": "Llantas Aleacion",
+                "precio": 12000
+            },
+            {
+                "id": "ABS",
+                "nombre": "Sistema Frenos ABS",
+                "precio": 14000
+            },
+            {
+                "id": "AC",
+                "nombre": "Aire Acondicionado",
+                "precio": 20000
+            },
+            {
+                "id": "AB",
+                "nombre": "AirBag",
+                "precio": 12000
+            },
+            {
+                "id": "TC",
+                "nombre": "Techo Corredizo",
+                "precio": 12000
+            }
+        ],
+        "automovilTipo": {
+            "id": "S",
+            "nombre": "sedan",
+            "precio": 230000
+        }
+    },
+    {
+        "id": 6,
+        "nombre": "Sedan TC-AC-ABS-AB-LL3",
+        "precioTotal": 300000,
+        "opcionales": [
+            {
+                "id": "LL",
+                "nombre": "Llantas Aleacion",
+                "precio": 12000
+            },
+            {
+                "id": "ABS",
+                "nombre": "Sistema Frenos ABS",
+                "precio": 14000
+            },
+            {
+                "id": "AB",
+                "nombre": "AirBag",
+                "precio": 12000
+            },
+            {
+                "id": "TC",
+                "nombre": "Techo Corredizo",
+                "precio": 12000
+            },
+            {
+                "id": "AC2",
+                "nombre": "Aire Acondicionado2",
+                "precio": 20000
+            }
+        ],
+        "automovilTipo": {
+            "id": "S",
+            "nombre": "sedan",
+            "precio": 230000
+        }
+    }
+]

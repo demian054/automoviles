@@ -1,0 +1,36 @@
+ /*
+ Method: Post - JSON(application/json)
+ URL: localhost:8080/fabric/automovil/new
+ */ 
+ 
+ #Request
+ {
+        "nombre": "Sedan TC-AC-ABS-AB-LL3",
+        "opcionales": [{
+        	"id": "TC",
+            "nombre": "Techo Corredizo",
+            "precio": 12000
+        },{
+        	"id": "AC",
+            "nombre": "Aire Acondicionado",
+            "precio": 20000
+        },{
+        	"id": "ABS",
+            "nombre": "Sistema Frenos ABS",
+            "precio": 14000
+        },{
+        	"id": "LL",
+            "nombre": "Llantas Aleacion",
+            "precio": 12000
+        },{
+        	"id": "AB",
+            "nombre": "AirBag",
+            "precio": 12000
+        }
+        ],
+        "automovilTipo": {
+        	"id":"S",
+            "nombre": "sedan",
+            "precio": 230000
+        }
+    }
